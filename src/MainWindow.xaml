@@ -1,0 +1,33 @@
+﻿<Window x:Class="PlayIt.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        mc:Ignorable="d"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        SizeToContent="WidthAndHeight"
+        Background="Black" Title="MainWindow"
+        d:DesignWidth="905" d:DesignHeight="378">
+    <DockPanel>
+        <Grid DockPanel.Dock="Top">
+            <ListBox>
+                Menus
+            </ListBox>
+        </Grid>
+        <Grid DockPanel.Dock="Bottom" Name="BottomPanel">
+            <ListBox>
+                Media Panel that displays media icons in the center
+            </ListBox>
+        </Grid>
+        <Grid DockPanel.Dock="Right" Name="RightPanel">
+            <ListBox>
+                Song 1 - AR Rahman
+            </ListBox>
+        </Grid>
+        <Grid DockPanel.Dock="Left" Name="LeftPanel">
+            <ListBox Name="SideBarMenus" Width="100">
+                some icons and menus veritically that scrolls into view
+            </ListBox>
+        </Grid>
+        <Grid Name="CenterPanel"></Grid>
+    </DockPanel>
+</Window>
